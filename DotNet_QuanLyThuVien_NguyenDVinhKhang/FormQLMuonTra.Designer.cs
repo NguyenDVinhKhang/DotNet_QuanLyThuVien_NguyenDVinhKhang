@@ -189,7 +189,6 @@
             // 
             // dtnNgayDaTra
             // 
-            this.dtnNgayDaTra.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtnNgayDaTra.Location = new System.Drawing.Point(265, 256);
             this.dtnNgayDaTra.Name = "dtnNgayDaTra";
             this.dtnNgayDaTra.Size = new System.Drawing.Size(200, 22);
@@ -218,8 +217,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormQLMuonTra";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Quản Lý Mượn Trả";
             ((System.ComponentModel.ISupportInitialize)(this.dgvQLMuonTra)).EndInit();
             this.ResumeLayout(false);

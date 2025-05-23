@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 
-namespace FormQLNV
+namespace DotNet_QuanLyThuVien_NguyenDVinhKhang
 {
     public class SqlServerConnection
     {
@@ -23,7 +23,7 @@ namespace FormQLNV
         //Chuột phải Project chọn add new item => chọn Data => Service-based Database
         //Chuột phải file .mdf chọn properties Copy to Output Directory => Do not copy
         //private static string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\QLNV.mdf;Integrated Security=True";
-        private static string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Teaching\CS 464\TestForm\FormQLNV\FormQLNV\QLNV.mdf"";Integrated Security=True";
+        private static string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Downloads\Documents\Workspace\c#\DotNet_QuanLyThuVien_NguyenDVinhKhang\DotNet_QuanLyThuVien_NguyenDVinhKhang\QLYTHUVIEN.mdf"";Integrated Security=True";
         //    private static string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;" +
         //"AttachDbFilename=\"" + Path.Combine(Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.FullName, "QLNV.mdf") + "\";" +
         //"Integrated Security=True";
