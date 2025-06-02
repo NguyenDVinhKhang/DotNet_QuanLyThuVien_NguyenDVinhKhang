@@ -34,8 +34,6 @@
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.dtpNgayMuon = new System.Windows.Forms.DateTimePicker();
-            this.txtIĐocGia = new System.Windows.Forms.TextBox();
-            this.txtIDSach = new System.Windows.Forms.TextBox();
             this.txtIDMuon = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -45,6 +43,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dtpDenNgay = new System.Windows.Forms.DateTimePicker();
             this.dtnNgayDaTra = new System.Windows.Forms.DateTimePicker();
+            this.cboMaSach = new System.Windows.Forms.ComboBox();
+            this.cboMaDocGia = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvQLMuonTra)).BeginInit();
             this.SuspendLayout();
             // 
@@ -99,20 +99,6 @@
             this.dtpNgayMuon.Size = new System.Drawing.Size(200, 22);
             this.dtpNgayMuon.TabIndex = 29;
             // 
-            // txtIĐocGia
-            // 
-            this.txtIĐocGia.Location = new System.Drawing.Point(265, 122);
-            this.txtIĐocGia.Name = "txtIĐocGia";
-            this.txtIĐocGia.Size = new System.Drawing.Size(200, 22);
-            this.txtIĐocGia.TabIndex = 26;
-            // 
-            // txtIDSach
-            // 
-            this.txtIDSach.Location = new System.Drawing.Point(265, 76);
-            this.txtIDSach.Name = "txtIDSach";
-            this.txtIDSach.Size = new System.Drawing.Size(200, 22);
-            this.txtIDSach.TabIndex = 25;
-            // 
             // txtIDMuon
             // 
             this.txtIDMuon.Location = new System.Drawing.Point(265, 31);
@@ -156,9 +142,9 @@
             this.label3.Location = new System.Drawing.Point(111, 125);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(77, 16);
+            this.label3.Size = new System.Drawing.Size(82, 16);
             this.label3.TabIndex = 20;
-            this.label3.Text = "Mã Đọc Giả";
+            this.label3.Text = "Tên Đọc Giả";
             // 
             // label2
             // 
@@ -166,9 +152,9 @@
             this.label2.Location = new System.Drawing.Point(111, 79);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 16);
+            this.label2.Size = new System.Drawing.Size(65, 16);
             this.label2.TabIndex = 19;
-            this.label2.Text = "Mã Sách";
+            this.label2.Text = "Tên Sách";
             // 
             // label1
             // 
@@ -194,11 +180,29 @@
             this.dtnNgayDaTra.Size = new System.Drawing.Size(200, 22);
             this.dtnNgayDaTra.TabIndex = 36;
             // 
+            // cboMaSach
+            // 
+            this.cboMaSach.FormattingEnabled = true;
+            this.cboMaSach.Location = new System.Drawing.Point(265, 76);
+            this.cboMaSach.Name = "cboMaSach";
+            this.cboMaSach.Size = new System.Drawing.Size(200, 24);
+            this.cboMaSach.TabIndex = 37;
+            // 
+            // cboMaDocGia
+            // 
+            this.cboMaDocGia.FormattingEnabled = true;
+            this.cboMaDocGia.Location = new System.Drawing.Point(265, 122);
+            this.cboMaDocGia.Name = "cboMaDocGia";
+            this.cboMaDocGia.Size = new System.Drawing.Size(200, 24);
+            this.cboMaDocGia.TabIndex = 38;
+            // 
             // FormQLMuonTra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(739, 554);
+            this.Controls.Add(this.cboMaDocGia);
+            this.Controls.Add(this.cboMaSach);
             this.Controls.Add(this.dtnNgayDaTra);
             this.Controls.Add(this.dtpDenNgay);
             this.Controls.Add(this.dgvQLMuonTra);
@@ -207,8 +211,6 @@
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnThem);
             this.Controls.Add(this.dtpNgayMuon);
-            this.Controls.Add(this.txtIĐocGia);
-            this.Controls.Add(this.txtIDSach);
             this.Controls.Add(this.txtIDMuon);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -235,8 +237,6 @@
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.DateTimePicker dtpNgayMuon;
-        private System.Windows.Forms.TextBox txtIĐocGia;
-        private System.Windows.Forms.TextBox txtIDSach;
         private System.Windows.Forms.TextBox txtIDMuon;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
@@ -246,5 +246,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker dtpDenNgay;
         private System.Windows.Forms.DateTimePicker dtnNgayDaTra;
+        private System.Windows.Forms.ComboBox cboMaSach;
+        private System.Windows.Forms.ComboBox cboMaDocGia;
     }
 }

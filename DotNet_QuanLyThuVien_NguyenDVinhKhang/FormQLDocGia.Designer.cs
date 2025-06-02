@@ -166,7 +166,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(77, 16);
             this.label1.TabIndex = 18;
-            this.label1.Text = "Mã Độc Giả";
+            this.label1.Text = "Mã Đọc Giả";
             // 
             // textDiaChi
             // 
