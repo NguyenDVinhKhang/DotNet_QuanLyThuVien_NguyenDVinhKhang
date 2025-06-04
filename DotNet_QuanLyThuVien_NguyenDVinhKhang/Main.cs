@@ -17,7 +17,7 @@ namespace DotNet_QuanLyThuVien_NguyenDVinhKhang
         private FormLogin formLogin;
         private FormQLSach formQLSach;
         private FormQLDocGia formQLDocGia;
-        private FormQLMuonTra formQLMuonTra;
+        private FormQLPhieuMuon formQLMuonTra;
         public Main()
         {
             InitializeComponent();
@@ -113,7 +113,7 @@ namespace DotNet_QuanLyThuVien_NguyenDVinhKhang
         {
             if (formQLMuonTra == null || formQLMuonTra.IsDisposed)
             {
-                formQLMuonTra = new FormQLMuonTra();
+                formQLMuonTra = new FormQLPhieuMuon();
                 formQLMuonTra.MdiParent = this;
                 formQLMuonTra.Show();
             }

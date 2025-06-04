@@ -43,12 +43,12 @@
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
             this.dgvQLSach = new System.Windows.Forms.DataGridView();
-            this.pictureBoxHinhAnh = new System.Windows.Forms.PictureBox();
+            this.pictureBoxHinhAnhSach = new System.Windows.Forms.PictureBox();
             this.txtNamXuatBan = new System.Windows.Forms.TextBox();
             this.txtNhaXuatBan = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvQLSach)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHinhAnh)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHinhAnhSach)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -117,21 +117,21 @@
             this.txtMaSach.Name = "txtMaSach";
             this.txtMaSach.Size = new System.Drawing.Size(266, 22);
             this.txtMaSach.TabIndex = 7;
-            this.txtMaSach.Text = "Mã được tạo tự động";
+            this.txtMaSach.Text = "Mã sách được tạo tự động";
             // 
             // txtTieuDe
             // 
             this.txtTieuDe.Location = new System.Drawing.Point(265, 140);
             this.txtTieuDe.Name = "txtTieuDe";
             this.txtTieuDe.Size = new System.Drawing.Size(266, 22);
-            this.txtTieuDe.TabIndex = 8;
+            this.txtTieuDe.TabIndex = 9;
             // 
             // txtTacGia
             // 
             this.txtTacGia.Location = new System.Drawing.Point(265, 185);
             this.txtTacGia.Name = "txtTacGia";
             this.txtTacGia.Size = new System.Drawing.Size(266, 22);
-            this.txtTacGia.TabIndex = 9;
+            this.txtTacGia.TabIndex = 10;
             // 
             // cboMaTheLoai
             // 
@@ -139,7 +139,7 @@
             this.cboMaTheLoai.Location = new System.Drawing.Point(265, 94);
             this.cboMaTheLoai.Name = "cboMaTheLoai";
             this.cboMaTheLoai.Size = new System.Drawing.Size(266, 24);
-            this.cboMaTheLoai.TabIndex = 11;
+            this.cboMaTheLoai.TabIndex = 8;
             // 
             // btnThem
             // 
@@ -186,31 +186,33 @@
             this.dgvQLSach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvQLSach.Location = new System.Drawing.Point(12, 388);
             this.dgvQLSach.Name = "dgvQLSach";
+            this.dgvQLSach.RowHeadersWidth = 51;
             this.dgvQLSach.Size = new System.Drawing.Size(1282, 258);
             this.dgvQLSach.TabIndex = 17;
             // 
-            // pictureBoxHinhAnh
+            // pictureBoxHinhAnhSach
             // 
-            this.pictureBoxHinhAnh.Location = new System.Drawing.Point(781, 52);
-            this.pictureBoxHinhAnh.Name = "pictureBoxHinhAnh";
-            this.pictureBoxHinhAnh.Size = new System.Drawing.Size(182, 199);
-            this.pictureBoxHinhAnh.TabIndex = 18;
-            this.pictureBoxHinhAnh.TabStop = false;
-            this.pictureBoxHinhAnh.Click += new System.EventHandler(this.pictureBoxHinhAnh_Click);
+            this.pictureBoxHinhAnhSach.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxHinhAnhSach.Location = new System.Drawing.Point(781, 52);
+            this.pictureBoxHinhAnhSach.Name = "pictureBoxHinhAnhSach";
+            this.pictureBoxHinhAnhSach.Size = new System.Drawing.Size(182, 199);
+            this.pictureBoxHinhAnhSach.TabIndex = 18;
+            this.pictureBoxHinhAnhSach.TabStop = false;
+            this.pictureBoxHinhAnhSach.Click += new System.EventHandler(this.pictureBoxHinhAnhSach_Click);
             // 
             // txtNamXuatBan
             // 
             this.txtNamXuatBan.Location = new System.Drawing.Point(265, 231);
             this.txtNamXuatBan.Name = "txtNamXuatBan";
             this.txtNamXuatBan.Size = new System.Drawing.Size(266, 22);
-            this.txtNamXuatBan.TabIndex = 19;
+            this.txtNamXuatBan.TabIndex = 11;
             // 
             // txtNhaXuatBan
             // 
             this.txtNhaXuatBan.Location = new System.Drawing.Point(265, 282);
             this.txtNhaXuatBan.Name = "txtNhaXuatBan";
             this.txtNhaXuatBan.Size = new System.Drawing.Size(266, 22);
-            this.txtNhaXuatBan.TabIndex = 21;
+            this.txtNhaXuatBan.TabIndex = 12;
             // 
             // label6
             // 
@@ -219,7 +221,7 @@
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(88, 16);
-            this.label6.TabIndex = 20;
+            this.label6.TabIndex = 5;
             this.label6.Text = "Nhà Xuất Bản";
             // 
             // FormQLSach
@@ -230,7 +232,7 @@
             this.Controls.Add(this.txtNhaXuatBan);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtNamXuatBan);
-            this.Controls.Add(this.pictureBoxHinhAnh);
+            this.Controls.Add(this.pictureBoxHinhAnhSach);
             this.Controls.Add(this.dgvQLSach);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnXoa);
@@ -253,7 +255,7 @@
             this.Text = "Quản Lý Sách";
             this.Load += new System.EventHandler(this.FormQLSach_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvQLSach)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHinhAnh)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHinhAnhSach)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -276,7 +278,7 @@
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.DataGridView dgvQLSach;
-        private System.Windows.Forms.PictureBox pictureBoxHinhAnh;
+        private System.Windows.Forms.PictureBox pictureBoxHinhAnhSach;
         private System.Windows.Forms.TextBox txtNamXuatBan;
         private System.Windows.Forms.TextBox txtNhaXuatBan;
         private System.Windows.Forms.Label label6;

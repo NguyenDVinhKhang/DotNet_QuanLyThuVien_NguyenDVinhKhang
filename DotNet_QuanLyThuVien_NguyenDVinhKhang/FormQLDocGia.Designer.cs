@@ -29,21 +29,24 @@
         private void InitializeComponent()
         {
             this.dgvQLDocGia = new System.Windows.Forms.DataGridView();
-            this.btnLoad = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.txtSDT = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtHoTen = new System.Windows.Forms.TextBox();
-            this.txtIDDocGia = new System.Windows.Forms.TextBox();
+            this.txtMaDocGia = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textDiaChi = new System.Windows.Forms.TextBox();
+            this.txtDiaChi = new System.Windows.Forms.TextBox();
+            this.pictureBoxHinhAnhDocGia = new System.Windows.Forms.PictureBox();
+            this.btnReset = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvQLDocGia)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHinhAnhDocGia)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvQLDocGia
@@ -51,72 +54,69 @@
             this.dgvQLDocGia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvQLDocGia.Location = new System.Drawing.Point(12, 334);
             this.dgvQLDocGia.Name = "dgvQLDocGia";
-            this.dgvQLDocGia.Size = new System.Drawing.Size(714, 208);
-            this.dgvQLDocGia.TabIndex = 34;
-            // 
-            // btnLoad
-            // 
-            this.btnLoad.Location = new System.Drawing.Point(568, 281);
-            this.btnLoad.Name = "btnLoad";
-            this.btnLoad.Size = new System.Drawing.Size(89, 27);
-            this.btnLoad.TabIndex = 33;
-            this.btnLoad.Text = "Load";
-            this.btnLoad.UseVisualStyleBackColor = true;
+            this.dgvQLDocGia.RowHeadersWidth = 51;
+            this.dgvQLDocGia.Size = new System.Drawing.Size(1287, 273);
+            this.dgvQLDocGia.TabIndex = 15;
+            this.dgvQLDocGia.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvQLDocGia_CellClick);
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(376, 281);
+            this.btnXoa.Location = new System.Drawing.Point(443, 281);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(89, 27);
-            this.btnXoa.TabIndex = 32;
+            this.btnXoa.TabIndex = 13;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
             // 
-            this.btnSua.Location = new System.Drawing.Point(237, 281);
+            this.btnSua.Location = new System.Drawing.Point(304, 281);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(89, 27);
-            this.btnSua.TabIndex = 31;
+            this.btnSua.TabIndex = 12;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnThem
             // 
-            this.btnThem.Location = new System.Drawing.Point(98, 281);
+            this.btnThem.Location = new System.Drawing.Point(165, 281);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(89, 27);
-            this.btnThem.TabIndex = 30;
+            this.btnThem.TabIndex = 11;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // txtSDT
             // 
             this.txtSDT.Location = new System.Drawing.Point(265, 175);
             this.txtSDT.Name = "txtSDT";
-            this.txtSDT.Size = new System.Drawing.Size(200, 22);
-            this.txtSDT.TabIndex = 27;
+            this.txtSDT.Size = new System.Drawing.Size(267, 22);
+            this.txtSDT.TabIndex = 9;
             // 
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(265, 127);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(200, 22);
-            this.txtEmail.TabIndex = 26;
+            this.txtEmail.Size = new System.Drawing.Size(267, 22);
+            this.txtEmail.TabIndex = 8;
             // 
             // txtHoTen
             // 
             this.txtHoTen.Location = new System.Drawing.Point(265, 79);
             this.txtHoTen.Name = "txtHoTen";
-            this.txtHoTen.Size = new System.Drawing.Size(200, 22);
-            this.txtHoTen.TabIndex = 25;
+            this.txtHoTen.Size = new System.Drawing.Size(267, 22);
+            this.txtHoTen.TabIndex = 7;
             // 
-            // txtIDDocGia
+            // txtMaDocGia
             // 
-            this.txtIDDocGia.Location = new System.Drawing.Point(265, 31);
-            this.txtIDDocGia.Name = "txtIDDocGia";
-            this.txtIDDocGia.Size = new System.Drawing.Size(200, 22);
-            this.txtIDDocGia.TabIndex = 24;
+            this.txtMaDocGia.Location = new System.Drawing.Point(265, 31);
+            this.txtMaDocGia.Name = "txtMaDocGia";
+            this.txtMaDocGia.Size = new System.Drawing.Size(267, 22);
+            this.txtMaDocGia.TabIndex = 6;
+            this.txtMaDocGia.Text = "Mã đọc giả được tạo tự động";
             // 
             // label6
             // 
@@ -125,7 +125,7 @@
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(49, 16);
-            this.label6.TabIndex = 23;
+            this.label6.TabIndex = 4;
             this.label6.Text = "Địa Chỉ";
             // 
             // label5
@@ -135,7 +135,7 @@
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(34, 16);
-            this.label5.TabIndex = 22;
+            this.label5.TabIndex = 3;
             this.label5.Text = "SĐT";
             // 
             // label4
@@ -145,7 +145,7 @@
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(41, 16);
-            this.label4.TabIndex = 21;
+            this.label4.TabIndex = 2;
             this.label4.Text = "Email";
             // 
             // label3
@@ -155,7 +155,7 @@
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(72, 16);
-            this.label3.TabIndex = 20;
+            this.label3.TabIndex = 1;
             this.label3.Text = "Họ Và Tên";
             // 
             // label1
@@ -165,31 +165,63 @@
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(77, 16);
-            this.label1.TabIndex = 18;
+            this.label1.TabIndex = 0;
             this.label1.Text = "Mã Đọc Giả";
             // 
-            // textDiaChi
+            // txtDiaChi
             // 
-            this.textDiaChi.Location = new System.Drawing.Point(265, 223);
-            this.textDiaChi.Name = "textDiaChi";
-            this.textDiaChi.Size = new System.Drawing.Size(200, 22);
-            this.textDiaChi.TabIndex = 35;
+            this.txtDiaChi.Location = new System.Drawing.Point(265, 223);
+            this.txtDiaChi.Name = "txtDiaChi";
+            this.txtDiaChi.Size = new System.Drawing.Size(267, 22);
+            this.txtDiaChi.TabIndex = 10;
+            // 
+            // pictureBoxHinhAnhDocGia
+            // 
+            this.pictureBoxHinhAnhDocGia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxHinhAnhDocGia.Location = new System.Drawing.Point(815, 34);
+            this.pictureBoxHinhAnhDocGia.Name = "pictureBoxHinhAnhDocGia";
+            this.pictureBoxHinhAnhDocGia.Size = new System.Drawing.Size(182, 199);
+            this.pictureBoxHinhAnhDocGia.TabIndex = 38;
+            this.pictureBoxHinhAnhDocGia.TabStop = false;
+            this.pictureBoxHinhAnhDocGia.Click += new System.EventHandler(this.pictureBoxHinhAnhDocGia_Click);
+            // 
+            // btnReset
+            // 
+            this.btnReset.Location = new System.Drawing.Point(1047, 281);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(115, 27);
+            this.btnReset.TabIndex = 14;
+            this.btnReset.Text = "Reset Form";
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(685, 34);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(60, 16);
+            this.label7.TabIndex = 5;
+            this.label7.Text = "Hình Ảnh";
             // 
             // FormQLDocGia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(742, 554);
-            this.Controls.Add(this.textDiaChi);
+            this.ClientSize = new System.Drawing.Size(1311, 619);
+            this.Controls.Add(this.pictureBoxHinhAnhDocGia);
+            this.Controls.Add(this.btnReset);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.txtDiaChi);
             this.Controls.Add(this.dgvQLDocGia);
-            this.Controls.Add(this.btnLoad);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnThem);
             this.Controls.Add(this.txtSDT);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtHoTen);
-            this.Controls.Add(this.txtIDDocGia);
+            this.Controls.Add(this.txtMaDocGia);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -200,7 +232,9 @@
             this.Name = "FormQLDocGia";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Quản Lý Đọc Giả";
+            this.Load += new System.EventHandler(this.FormQLDocGia_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvQLDocGia)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHinhAnhDocGia)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -209,19 +243,21 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgvQLDocGia;
-        private System.Windows.Forms.Button btnLoad;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.TextBox txtSDT;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtHoTen;
-        private System.Windows.Forms.TextBox txtIDDocGia;
+        private System.Windows.Forms.TextBox txtMaDocGia;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textDiaChi;
+        private System.Windows.Forms.TextBox txtDiaChi;
+        private System.Windows.Forms.PictureBox pictureBoxHinhAnhDocGia;
+        private System.Windows.Forms.Button btnReset;
+        private System.Windows.Forms.Label label7;
     }
 }
